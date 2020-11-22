@@ -25,7 +25,14 @@ extends:
     # Put other parameters here. 
 ```
 
-Refer ``azure-pipelines-template.yml`` file for more parameters.
+Refer [azure-pipelines-template.yml](azure-pipelines-template.yml) file for more parameters.
 
-As user-defined variables are injected as environmental variables, sensitive information such as 
-``CONAN_LOGIN_USERNAME`` and ``CONAN_PASSWORD`` can be set in a variable group using the Library in the UI. 
+As user-defined variables are injected as environmental variables, following variables may be specified in a variable group in the "Library".
+  * CONAN_LOGIN_USERNAME
+  * CONAN_PASSWORD
+  * CONAN_REMOTES
+  * CONAN_UPLOAD
+
+Followings can be set empty if user/channel information is not needed i.e. when the package is used as ``mypackage/x.y.z``
+  * CONAN_USERNAME
+  * CONAN_CHANNEL
