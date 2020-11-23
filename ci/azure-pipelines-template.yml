@@ -1,3 +1,4 @@
+# This template is based on https://github.com/bincrafters/templates/blob/main/.ci/azure.yml
 parameters:
   - name: conanUploadOnlyWhenStable
     type: string
